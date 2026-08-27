@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan J. Young Consulting — Redesign Concepts</title>
+<meta name="description" content="Three modern redesign concepts for the Jonathan J. Young Consulting website, plus the original early-2000s site for reference.">
+<style>
+  :root {
+    --bg: #f5f4f1;
+    --card: #ffffff;
+    --ink: #1c1c1c;
+    --muted: #5c5c5c;
+    --border: #e1ddd3;
+    --sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { width: min(1080px, 92%); margin-inline: auto; padding: 4.5rem 0 5rem; }
+  header.intro { text-align: center; max-width: 60ch; margin: 0 auto 3.5rem; }
+  header.intro .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #8a8578;
+  }
+  header.intro h1 {
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    margin: 0.6rem 0 1rem;
+  }
+  header.intro p { color: var(--muted); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+  .demo-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(20,20,20,0.05);
+  }
+  .demo-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(20,20,20,0.12); }
+  .swatch {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  .swatch span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .swatch-1 { background: linear-gradient(135deg, #12233a, #33526e); }
+  .swatch-2 { background: linear-gradient(135deg, #7c5cff, #00e6c3); }
+  .swatch-3 { background: linear-gradient(135deg, #5a4632, #a9812f); }
+
+  .demo-card .body { padding: 1.4rem 1.5rem 1.6rem; flex: 1; display: flex; flex-direction: column; }
+  .demo-card h2 { font-size: 1.15rem; margin: 0 0 0.5rem; }
+  .demo-card p { color: var(--muted); font-size: 0.92rem; margin: 0; flex: 1; }
+  .demo-card .cta {
+    margin-top: 1.2rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1c1c1c;
+  }
+
+  .archive-note {
+    margin-top: 3.5rem;
+    text-align: center;
+    padding: 1.6rem;
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .archive-note a { color: var(--ink); }
+
+  @media (max-width: 800px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="intro">
+    <p class="eyebrow">Redesign Concepts</p>
+    <h1>Jonathan J. Young Consulting</h1>
+    <p>The original site for this project management &amp; owner's representation practice was built in the early 2000s. Below are three independent, modern redesign concepts &mdash; each a full demonstration site, not a live business.</p>
+  </header>
+
+  <div class="grid">
+    <a class="demo-card" href="site1/index.html">
+      <div class="swatch swatch-1"><span>Concept 1</span></div>
+      <div class="body">
+        <h2>Professional &amp; Reserved</h2>
+        <p>A sturdy, trustworthy design oriented toward construction and institutional clients &mdash; navy, steel, and safety-amber.</p>
+        <span class="cta">View Site 1 →</span>
+      </div>
+    </a>
+    <a class="demo-card" href="site2/index.html">
+      <div class="swatch swatch-2"><span>Concept 2</span></div>
+      <div class="body">
+        <h2>Adventurous &amp; Forward-Thinking</h2>
+        <p>Bold gradients, dark-mode-first, and more expressive interaction &mdash; built for a firm that wants to look ahead.</p>
+        <span class="cta">View Site 2 →</span>
+      </div>
+    </a>
+    <a class="demo-card" href="site3/index.html">
+      <div class="swatch swatch-3"><span>Concept 3</span></div>
+      <div class="body">
+        <h2>Retrospective</h2>
+        <p>A modern but understated design that reframes the same practice as a retired career &mdash; a historical record, not an active business.</p>
+        <span class="cta">View Site 3 →</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="archive-note">
+    Looking for the original site as it existed in the early 2000s? See the <a href="archive/jonathanjyoung.com/index.htm">unedited archive</a>.
+  </div>
+</div>
+</body>
+</html>
